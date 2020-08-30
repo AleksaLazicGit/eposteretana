@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilovi/stilpocetna.css">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+</head>
+
+<body onload="prikaziVreme()">
+    <div id="omeeee">
+
+    <div id="omotac">
+
+        <nav class="meni">
+            <ul>
+                <li style="background-color: aliceblue;"><a href="#">Pocetna</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="objekat.html">Objekat</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div id="om">
+        <div class="header">
+            <h1>Dobrodosli u teretanu!!</h1>
+
+            <form action="" id="forma" onsubmit="return validacija()">
+                <div class="container">
+                    <label for="name"><b>Korisnicko ime</b></label>
+                    <br>
+                    <input type="text" placeholder="Unesite korisnicko ime" name="ime" id="ime" onsubmit="">
+                    <br>
+
+                    <label for="sifra"><b>Sifra</b></label>
+                    <br>
+                    <input type="password" placeholder="Unesite sifru" name="sifra" id="sifra">
+                    <br>
+                    <button type="submit">Ulogujte se:</button> <br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="zapamti">Zapamti me
+                    </label> <br>
+                    <p class="sifra">Zaboravili ste <a href="#" id="zabsif">sifru? </a></p>
+                </div>
+                <div id="vreme">
+                    
+                </div>
+            </form>
+        </div>
+        <div id="ekran2"> <img src="slikateretane3.jpg" width="auto"></div>
+
+        
+    </div>
+    <!-- <div id="ekran2"></div>
+    <div><img src="slikateretane3.jpg"  ></div> -->
+</div>
+    
+
+
+    
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('#om').slick({
+            
+        });
+        });
+    </script>
+
+
+    
+</body>
+
+</html>
